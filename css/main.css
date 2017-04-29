@@ -36,8 +36,17 @@ h4 {
 
 ul li {
     display: inline-block;
-    margin: auto;
-    width: 100px;
+    margin: 50px auto;
+    width: 300px;
+    text-align: center;
+}
+
+.mainContainer {
+    display: block;
+    margin: 50px auto;
+    width: 800px;
+    text-align: center;
+
 }
 
 header {
@@ -45,9 +54,7 @@ header {
 }
 
 .prog {
-    width: 600px;
-    margin: 20px 20px auto;
-    display: inline-block;
+    display: block;
     text-align: center;
 }
 
