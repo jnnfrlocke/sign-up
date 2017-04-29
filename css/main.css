@@ -1,5 +1,4 @@
 * {
-
     margin: auto;
 }
 
@@ -38,7 +37,7 @@ ul li {
 }
 
 header {
-    display:block;
+    display: block;
     border: 1px solid blue;
 }
 
