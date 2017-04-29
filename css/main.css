@@ -2,6 +2,10 @@
     margin: auto;
 }
 
+.hide {
+    display:none;
+}
+
 h2 {
     font-family: 'Merriweather', serif;
     margin: 0;
