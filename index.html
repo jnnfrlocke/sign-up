@@ -55,9 +55,11 @@
 
         <div id="mtgInfo" class="hide">
             <h4>How shall we meet?</h4>
-            <button class="mtgBtn">Phone</button>
-            <button class="mtgBtn">In Person</button>
-            <button class="mtgBtn">Remote</button>
+            <select>
+  <option value="inPerson">In Person</option>
+  <option value="phone">Phone</option>
+  <option value="remote">Remote</option>
+</select>
             <h4>When shall we meet?</h4>
             <textarea placeholder="Request a date and time"></textarea>
             <button class="btnContinue">Continue</button>
@@ -65,12 +67,16 @@
 
 
         <div class="contactSubmit hide">
-            <h4>Tell me about yourself</h4>
-            <input type="text" placeholder="Name">
-            <input type="text" placeholder="email">
-            <textarea placeholder="Anything else you'd like to tell me?"></textarea>
-            <input type="submit">
-
+            <div id="nameInput">
+                <h4>Tell me about yourself</h4>
+                <input type="text" placeholder="Name" id="visitor">
+                <button id="nameBtn">Continue</button></div>
+            <div id="emailField" class="hide">
+                <p>Hi, </p>
+                <input type="email" name="usremail" placeholder="email">
+                <textarea placeholder="Anything else you'd like to tell me?"></textarea>
+                <input type="submit">
+            </div>
         </div>
 
 
