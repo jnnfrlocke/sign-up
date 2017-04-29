@@ -6,6 +6,14 @@
     display:none;
 }
 
+.mainContainer {
+    display: block;
+    margin: 50px auto;
+    width: 800px;
+    text-align: center;
+}
+
+
 h2 {
     font-family: 'Merriweather', serif;
     margin: 0;
@@ -41,14 +49,6 @@ ul li {
     text-align: center;
 }
 
-.mainContainer {
-    display: block;
-    margin: 50px auto;
-    width: 800px;
-    text-align: center;
-
-}
-
 header {
     display: block;
 }
@@ -73,6 +73,7 @@ button {
     height: 100px;
     width: 100px;
     background: blue;
+    margin: 0 50px 0 50px;
 }
 
 #meet {
