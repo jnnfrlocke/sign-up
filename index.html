@@ -45,50 +45,46 @@
             </button>
         </div>
 
-        <!--Both About Button Sections-->
-        <div class="contactTxt">
-            <!--class="hide"-->
-            <h4>What questions can I answer for you?</h4>
-            <form id="questions"></form>
-            <textarea> </textarea>
-            <button class="btnContinue">Continue</button>
-        </div>
+        <form action="https://formspree.io/jnnfrlocke@gmail.com" method="POST">
+            <!--Both About Button Sections-->
+            <div class="contactTxt">
+                <h4>What questions can I answer for you?</h4>
+                <textarea name="questions"> </textarea>
+                <button class="btnContinue">Continue</button>
+            </div>
 
-        <!--Meet Me Section-->
-        <div id="mtgInfo">
-            <!--class="hide"-->
-            <h4>How shall we meet?</h4>
-            <select>
+            <!--Meet Me Section-->
+            <div id="mtgInfo">
+                <h4>How shall we meet?</h4>
+                <select name="meeting">
   <option value="inPerson">In Person</option>
   <option value="phone">Phone</option>
   <option value="remote">Remote</option>
 </select>
-            <div id="favTool">
-                <h4>Do you have a favorite web meeting tool?</h4>
-                <textarea placeholder="Which service would you like to use?"></textarea></div>
+                <div id="favTool">
+                    <h4>Do you have a favorite web meeting tool?</h4>
+                    <textarea name="meetTool" placeholder="Which service would you like to use?"></textarea></div>
 
-            <h4>When shall we meet?</h4>
-            <textarea placeholder="What date and time would be convenient?"></textarea>
-            <button class="btnContinue">Continue</button>
-        </div>
-
-        <!--Final Section-->
-        <div class="contactSubmit">
-            <!--class="hide"-->
-            <div id="nameInput">
-                <h4>Tell me about yourself</h4>
-                <input type="text" placeholder="Name" id="visitor" class="bottomBrdr">
+                <h4>When shall we meet?</h4>
+                <textarea name="meetTime" placeholder="What date and time would be convenient?"></textarea>
+                <button class="btnContinue">Continue</button>
             </div>
-            <div id="emailField">
-                <!--class="hide"-->
-                <p>Hi, <span id="autoName"></span>, could I please have your email address?</p>
-                <input type="email" class="bottomBrdr" name="usremail" placeholder="email">
-                <input name="usrphone" placeholder="phone (optional)" class="bottomBrdr">
-                <textarea placeholder="Anything else you'd like to tell me?"></textarea>
-                <input type="submit" id="submitBtn">
-            </div>
-        </div>
 
+            <!--Final Section-->
+            <div class="contactSubmit">
+                <div id="nameInput">
+                    <h4>Tell me about yourself</h4>
+                    <input type="text" name="usrName" placeholder="Name" id="visitor" class="bottomBrdr">
+                </div>
+                <div id="emailField">
+                    <p>Hi, <span id="autoName"></span>, could I please have your email address?</p>
+                    <input type="email" name="_replyTo" class="bottomBrdr" placeholder="email">
+                    <input name="usrPhone" placeholder="phone (optional)" class="bottomBrdr">
+                    <textarea name="addInfo" placeholder="Anything else you'd like to tell me?"></textarea>
+                    <input type="submit" id="submitBtn" value="Send">
+                </div>
+            </div>
+        </form>
     </section>
 
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>

@@ -1,4 +1,4 @@
-$(".contactTxt,#mtgInfo,.contactSubmit,#emailField").hide();
+$(".contactTxt,#mtgInfo,.contactSubmit,#emailField,#favTool").hide();
 
 // About Sections
 $(".more").click(function() {
@@ -25,8 +25,6 @@ $("#meet").click(function() {
 })
 
 // Web Meeting Tool Hide/Show
-$("#favTool").hide();
-
 $("select").change(function() {
     if ($("select").val() == "remote") {
         $("#favTool").show();
