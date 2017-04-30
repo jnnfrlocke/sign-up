@@ -1,6 +1,7 @@
-/** {
+* {
     margin: auto;
-}*/
+    background: #223a43;
+}
 
 .hide {
     display: none;
@@ -16,26 +17,18 @@ h2 {
     font-family: 'Merriweather', serif;
     margin: 0;
     padding: .5em 0 .5em 0;
-    color: #223a43;
+    color: #f4e8c1;
     font-weight: bold;
     text-align: center;
     font-size: 36px;
 }
 
-h3 {
-    font-family: 'Merriweather', serif;
-    margin: 0;
-    padding: 1em 0 1em 0;
-    color: #223a43;
-    font-weight: bold;
-    text-align: center;
-}
-
 h4 {
-    font-family: 'Merriweather', serif;
+    font-family: 'Raleway', sans-serif;
     margin: 0;
     padding: 1em 0 1em 0;
-    color: #223a43;
+    color: #f4e8c1;
+    font-size: 24px;
     font-weight: bold;
     text-align: center;
 }
@@ -59,17 +52,24 @@ button:hover {
 }
 
 .more {
-    border-radius: 50%;
+    border-radius: 50px;
+    border: 2px solid #6b8f71;
     height: 100px;
     width: 100px;
-    background: blue;
     margin: 0 50px 0 50px;
+    color: #f4e8c1;
+    font-size: 16px;
+    font-family: 'Raleway', sans-serif;
 }
 
 #meet {
     border-radius: 50%;
+    border: 2px solid #6b8f71;
     height: 150px;
     width: 150px;
+    color: #f4e8c1;
+    font-size: 20px;
+    font-family: 'Raleway', sans-serif;
 }
 
 textarea {
@@ -77,6 +77,7 @@ textarea {
     width: 400px;
     height: 100px;
     margin: 10px auto 20px auto;
+    color: #f4e8c1;
 }
 
 input[type=submit]:hover {
