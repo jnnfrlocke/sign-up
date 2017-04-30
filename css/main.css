@@ -78,3 +78,7 @@ textarea {
     height: 100px;
     margin: 10px auto 20px auto;
 }
+
+input[type=submit]:hover {
+    cursor: pointer;
+}
