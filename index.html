@@ -59,8 +59,12 @@
   <option value="phone">Phone</option>
   <option value="remote">Remote</option>
 </select>
+            <div id="favTool">
+                <h4>Do you have a favorite web meeting tool?</h4>
+                <textarea placeholder="Which service would you like to use?"></textarea></div>
+
             <h4>When shall we meet?</h4>
-            <textarea placeholder="Request a date and time"></textarea>
+            <textarea placeholder="What date and time would be convenient?"></textarea>
             <button class="btnContinue">Continue</button>
         </div>
 
@@ -73,6 +77,7 @@
             <div id="emailField" class="hide">
                 <p>Hi, <span id="autoName"></span>, could I please have your email address?</p>
                 <input type="email" name="usremail" placeholder="email">
+                <input name="usrphone" placeholder="phone (optional)">
                 <textarea placeholder="Anything else you'd like to tell me?"></textarea>
                 <input type="submit" id="submitBtn">
             </div>

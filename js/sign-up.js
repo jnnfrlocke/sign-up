@@ -5,6 +5,7 @@ $(".more").click(function() {
     $("#progCirc2").addClass("fa-circle");
     $(':input:enabled:visible:first').focus();
 })
+$("#favTool").hide();
 
 $("#meet").click(function() {
     $("#contactBtns").addClass("hide");
@@ -12,6 +13,14 @@ $("#meet").click(function() {
     $("#progCirc2").removeClass("fa-circle-o");
     $("#progCirc2").addClass("fa-circle");
     $(':input:enabled:visible:first').focus();
+})
+
+$("select").change(function() {
+    if ($("select").val() == "remote") {
+        $("#favTool").show();
+    } else {
+        $("#favTool").hide();
+    }
 })
 
 $(".btnContinue").click(function() {
