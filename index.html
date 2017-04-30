@@ -46,6 +46,7 @@
 
         <div class="contactTxt hide">
             <h4>What questions do you have?</h4>
+            <form id="questions"></form>
             <textarea> </textarea>
             <button class="btnContinue">Continue</button>
         </div>
@@ -70,7 +71,7 @@
                 <input type="text" placeholder="Name" id="visitor">
                 <button id="nameBtn">Continue</button></div>
             <div id="emailField" class="hide">
-                <p>Hi, </p>
+                <p>Hi, <span id="autoName"></span>, could I please have your email address?</p>
                 <input type="email" name="usremail" placeholder="email">
                 <textarea placeholder="Anything else you'd like to tell me?"></textarea>
                 <input type="submit">
