@@ -45,46 +45,55 @@
             </button>
         </div>
 
-        <form action="https://formspree.io/jnnfrlocke@gmail.com" method="POST">
-            <!--Both About Button Sections-->
-            <div class="contactTxt">
+        <!--Both About Button Sections-->
+        <div class="contactTxt">
+            <fieldset>
                 <h4>What questions can I answer for you?</h4>
-                <textarea name="questions"> </textarea>
+                <textarea name="questions" form="contactForm"> </textarea>
                 <button class="btnContinue">Continue</button>
-            </div>
+            </fieldset>
+        </div>
 
-            <!--Meet Me Section-->
-            <div id="mtgInfo">
+
+        <!--Meet Me Section-->
+        <div id="mtgInfo">
+            <fieldset>
                 <h4>How shall we meet?</h4>
                 <select name="meeting">
   <option value="inPerson">In Person</option>
   <option value="phone">Phone</option>
   <option value="remote">Remote</option>
 </select>
+
                 <div id="favTool">
                     <h4>Do you have a favorite web meeting tool?</h4>
-                    <textarea name="meetTool" placeholder="Which service would you like to use?"></textarea></div>
+                    <textarea name="meetTool" form="contactForm" placeholder="Which service would you like to use?"></textarea></div>
 
                 <h4>When shall we meet?</h4>
-                <textarea name="meetTime" placeholder="What date and time would be convenient?"></textarea>
+                <textarea name="meetTime" form="contactForm" placeholder="What date and time would be convenient?"></textarea>
                 <button class="btnContinue">Continue</button>
-            </div>
+            </fieldset>
+        </div>
 
-            <!--Final Section-->
-            <div class="contactSubmit">
-                <div id="nameInput">
-                    <h4>Tell me about yourself</h4>
-                    <input type="text" name="usrName" placeholder="Name" id="visitor" class="bottomBrdr">
-                </div>
-                <div id="emailField">
-                    <p>Hi, <span id="autoName"></span>, could I please have your email address?</p>
-                    <input type="email" name="_replyTo" class="bottomBrdr" placeholder="email">
-                    <input name="usrPhone" placeholder="phone (optional)" class="bottomBrdr">
-                    <textarea name="addInfo" placeholder="Anything else you'd like to tell me?"></textarea>
-                    <input type="submit" id="submitBtn" value="Send">
-                </div>
-            </div>
-        </form>
+        <!--Final Section-->
+        <div class="contactSubmit">
+            <form action="https://formspree.io/jnnfrlocke@gmail.com" method="POST" id="contactForm">
+                <fieldset>
+                    <div id="nameInput">
+                        <h4>Tell me about yourself</h4>
+                        <input type="text" name="usrName" placeholder="Name" id="visitor" class="bottomBrdr">
+                    </div>
+                    <div id="emailField">
+                        <p>Hi, <span id="autoName"></span>, could I please have your email address?</p>
+                        <input type="email" name="_replyTo" class="bottomBrdr" placeholder="email">
+                        <input name="usrPhone" type="tel" placeholder="phone (optional)" class="bottomBrdr" pattern="^(1?(-?\d{3}))-?(\d{3})(-?\d{4})$">
+                        <textarea name="addInfo" form="contactForm" placeholder="Anything else you'd like to tell me?"></textarea>
+                        <input type="submit" id="submitBtn" value="Send">
+                    </div>
+                </fieldset>
+            </form>
+        </div>
+
     </section>
 
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
