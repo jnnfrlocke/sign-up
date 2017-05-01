@@ -46,6 +46,9 @@ i {
     padding: 0 20px 0 20px;
 }
 
+fieldset {
+    border:none;
+}
 .fa-circle {
     color: #6b8f71;
 }
